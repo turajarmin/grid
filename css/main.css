@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 1200px) {
+    div.container{
+        background-color: lightgray;
+        display: grid;
+        grid-template-areas:
+        "header header header "
+        "content content aside"
+        "T1 T2 T3"
+        "footer footer footer"
+    ;
+    }
+    div.container>div.header{
+        grid-area: header;
+        height: 200px;
+        line-height: 200px;
+        background-color: blueviolet;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 30px;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.content{
+        grid-area: content;
+        background-color: #3b3b3b;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.content>h1{
+        margin-bottom: 20px;
+    }
+    div.container>div.aside{
+        grid-area: aside;
+        background-color: #4b3b3b;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.aside>h1{
+        margin-bottom: 20px;
+    }
+    div.container>div.box-1{
+        grid-area: T1;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #5b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>div.box-2{
+        grid-area: T2;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #6b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>div.box-3{
+        grid-area: T3;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #7b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>footer{
+        grid-area: footer;
+        height: 50px;
+        background-color: #2b2b2b;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: "Comic Sans MS";
+        line-height: 50px;
+        text-transform: capitalize;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    div.container{
+        background-color: lightgray;
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "content aside"
+        "T1 T1"
+        "T2 T2"
+        "T3 T3"
+        "footer footer"
+    ;
+    }
+    div.container>div.header{
+        grid-area: header;
+        height: 200px;
+        line-height: 200px;
+        background-color: blueviolet;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 30px;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.content{
+        grid-area: content;
+        background-color: #3b3b3b;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.content>h1{
+        margin-bottom: 20px;
+    }
+    div.container>div.aside{
+        grid-area: aside;
+        background-color: #4b3b3b;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-family: "Comic Sans MS";
+    }
+    div.container>div.aside>h1{
+        margin-bottom: 20px;
+    }
+    div.container>div.box-1{
+        grid-area: T1;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #5b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>div.box-2{
+        grid-area: T2;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #6b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>div.box-3{
+        grid-area: T3;
+        padding: 20px;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        background-color: #7b5b5b;
+        font-family: "Comic Sans MS";
+        text-align: justify;
+    }
+    div.container>footer{
+        grid-area: footer;
+        height: 50px;
+        background-color: #2b2b2b;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: "Comic Sans MS";
+        line-height: 50px;
+        text-transform: capitalize;
+    }
+}
